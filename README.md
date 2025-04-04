@@ -5,7 +5,7 @@ an example on how to deploy keepMeAlive3d with docker
 
 Note: skip steps with services you already have running.
 
-1. clone the repo to where you want to the project
+1. clone the repo to a server/pc where you want to run the project
 
 ### Mysql
 
