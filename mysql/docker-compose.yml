@@ -1,0 +1,10 @@
+services:
+  sql:
+    container_name: mysql
+    image: mysql:9
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=pVVSuX4KQ7w7nCqxTrYbmhTk3Z1ST7SZ  # todo change credentials
