@@ -1,9 +1,17 @@
 # docker-deployment
 an example on how to deploy keepMeAlive3d with docker
 
-## Setup
+## Quickstart
+
+- run `docker compose up -d` in the root directory
+- you'll notice that mqtt gets an auth error in the kma container, to fix this run `docker exec mqtt mosquitto_passwd -U /etc/mosquitto/passwd`
+- restart the docker service if necessary
+- you can access the app on [localhost](http://localhost/)
+
+## Prod / individual Setup
 
 Note: skip steps with services you already have running.
+Ignore the `docker-compose.yml` in the root directory.
 
 1. clone the repo to a server/pc where you want to run the project
 

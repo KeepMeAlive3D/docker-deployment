@@ -1,18 +1,18 @@
 passphrase: 'Bpwh3aNH0rF6DsOOFmJ9xnYvyPPRGWDP'        # todo change passphrase
 databases:
   sql:
-    host: 'jdbc:mysql://localhost:3306/kma'
+    host: 'jdbc:mysql://mysql:3306/kma'
     user: 'root'
     password: 'pVVSuX4KQ7w7nCqxTrYbmhTk3Z1ST7SZ'      # todo change credentials (defined in mysql)
   sqlMigrate: # used to create the schema and tables needed, when initial migration is run, access can be restricted
-    host: 'jdbc:mysql://localhost:3306'
+    host: 'jdbc:mysql://mysql:3306'
     user: 'root'
     password: 'pVVSuX4KQ7w7nCqxTrYbmhTk3Z1ST7SZ'
   mqtt:
-    host: 'localhost'
+    host: 'mqtt'
     port: 1883
     clientId: 'kma'
-    password: 'Dii5BPSarVnENLMQU8RqIBa5e25djili'      # todo change credentials (defined in mqtt)
+    password: 'abcTodoChangePassword'      # todo change credentials (defined in mqtt)
     topic: '#'
   influx:
     host: 'xxx'
@@ -20,4 +20,8 @@ databases:
     org: 'xxx'
     bucket: 'xxx'
     token: 'xxx'
+  kafka:
+    host: 'xxx'
+    port: 8083
+    password: 'xxx'
 pluginDirs: ["plugins"]
